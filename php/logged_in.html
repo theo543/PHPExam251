@@ -1,0 +1,21 @@
+<p>
+    Autentificare reusita!
+</p>
+<form action="/logout" method="post">
+    <p><label>Log out: <input type="submit" value="Log out" /></label></p>
+</form>
+<form action="/log_treatment" method="post">
+    <p><label>Nume pacient: <input type="text" name="patient_name" /></label></p>
+    <p><label>Nume doctor: <input type="text" name="doctor_name" /></label></p>
+    <p><label>Durata in zile: <input type="number" name="zile" /></label></p>
+    <p><input type="submit" value="Inregistreaza tratament" /></p>
+</form>
+<form action="/fire_employee" method="post">
+    <p><label>Nume doctor: <input type="text" name="employee_name" /></label></p>
+    <p><input type="submit" value="Concediaza doctor" /></p>
+</form>
+<form action="/set_specialty_manager" method="post">
+    <p><label>Nume doctor: <input type="text" name="manager_name" /></label></p>
+    <p><label>Nume specialitate: <input type="text" name="specialty_name" /></label></p>
+    <p><input type="submit" value="Seteaza manager de specialitate" /></p>
+</form>

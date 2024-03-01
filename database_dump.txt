@@ -1,0 +1,193 @@
+-- Adminer 4.8.1 MySQL 8.0.35-0ubuntu0.22.04.1 dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+SET NAMES utf8mb4;
+
+CREATE DATABASE `spital` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `spital`;
+
+DROP TABLE IF EXISTS `logs`;
+CREATE TABLE `logs` (
+  `id_log` int NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) DEFAULT NULL,
+  `id_sesiune` int DEFAULT NULL,
+  `adresa_ip` varchar(255) NOT NULL,
+  `adresa_web` varchar(255) NOT NULL,
+  `post_data` varchar(255) NOT NULL,
+  `data_log` date NOT NULL,
+  PRIMARY KEY (`id_log`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `logs` (`id_log`, `email`, `id_sesiune`, `adresa_ip`, `adresa_web`, `post_data`, `data_log`) VALUES
+(1,	NULL,	NULL,	'::1',	'/request_email',	'Date trimise formularului: email: theodor.negrescu@gmail.com, ',	'2024-01-12'),
+(2,	NULL,	NULL,	'::1',	'/login',	'Date trimise formularului: email: theodor.negrescu@gmail.com, password a fost trimis, ',	'2024-01-12'),
+(3,	NULL,	NULL,	'::1',	'/login',	'Date trimise formularului: email: theodor.negrescu@gmail.com, password a fost trimis, ',	'2024-01-12'),
+(4,	NULL,	NULL,	'::1',	'/login',	'Date trimise formularului: email: theodor.negrescu@gmail.com, password a fost trimis, ',	'2024-01-12'),
+(5,	NULL,	NULL,	'::1',	'/request_email',	'Date trimise formularului: email: theodor.negrescu@gmail.com, ',	'2024-01-12'),
+(6,	NULL,	NULL,	'::1',	'/login',	'Date trimise formularului: email: theodor.negrescu@gmail.com, password a fost trimis, ',	'2024-01-12'),
+(7,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Popescu Ion, ',	'2024-01-12'),
+(8,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(9,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(10,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(11,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(12,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(13,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(14,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(15,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(16,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(17,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(18,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(19,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(20,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(21,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(22,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(23,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(24,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(25,	NULL,	NULL,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Alexandra Maria, zile: 17, ',	'2024-01-12'),
+(26,	NULL,	NULL,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Alexandra Maria, zile: 17, ',	'2024-01-12'),
+(27,	NULL,	NULL,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Alexandra Maria, zile: 17, ',	'2024-01-12'),
+(28,	NULL,	NULL,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Alexandra Maria, zile: 17, ',	'2024-01-12'),
+(29,	NULL,	NULL,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Alexandra Maria, zile: 17, ',	'2024-01-12'),
+(30,	NULL,	NULL,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Alexandra Maria, zile: 17, ',	'2024-01-12'),
+(31,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(32,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(33,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(34,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(35,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(36,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(37,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(38,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(39,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(40,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(41,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(42,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(43,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(44,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(45,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Chirurgie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(46,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Ionescu Mihai, ',	'2024-01-12'),
+(47,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Alexandra Maria, ',	'2024-01-12'),
+(48,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(49,	NULL,	NULL,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Alexandra Maria, zile: 17, ',	'2024-01-12'),
+(50,	NULL,	NULL,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Alexandra Maria, zile: 17, ',	'2024-01-12'),
+(51,	NULL,	NULL,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Alexandra Maria, zile: 17, ',	'2024-01-12'),
+(52,	NULL,	NULL,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Alexandra Maria, zile: 17, ',	'2024-01-12'),
+(53,	NULL,	NULL,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Alexandra Maria, zile: 18, ',	'2024-01-12'),
+(54,	NULL,	NULL,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Ionescu Mihai, zile: 21, ',	'2024-01-12'),
+(55,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Popescu Ion, ',	'2024-01-12'),
+(56,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Alexandra Maria, ',	'2024-01-12'),
+(57,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(58,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Daria Andreea, ',	'2024-01-12'),
+(59,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Alexandra Maria, ',	'2024-01-12'),
+(60,	NULL,	NULL,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: Neurologie, manager_name: Popescu Ion, ',	'2024-01-12'),
+(61,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: Alexandra Maria, ',	'2024-01-12'),
+(62,	NULL,	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: tmp: test, ',	'2024-01-12'),
+(63,	'theodor.negrescu@gmail.com',	NULL,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: tmp: test, ',	'2024-01-12'),
+(64,	'theodor.negrescu@gmail.com',	2,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: dasdasd, manager_name: asdasd, ',	'2024-01-12'),
+(65,	'theodor.negrescu@gmail.com',	2,	'::1',	'/logout',	'Date trimise formularului: session_email nu a fost trimis, session_token nu a fost trimis, ',	'2024-01-12'),
+(66,	NULL,	NULL,	'::1',	'/request_email',	'Date trimise formularului: email: theodor.negrescu@gmail.com, ',	'2024-01-12'),
+(67,	NULL,	NULL,	'::1',	'/login',	'Date trimise formularului: email: theodor.negrescu@gmail.com, password a fost trimis, ',	'2024-01-12'),
+(68,	'theodor.negrescu@gmail.com',	3,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: logat, manager_name: test, ',	'2024-01-12'),
+(69,	'theodor.negrescu@gmail.com',	3,	'::1',	'/logout',	'Date trimise formularului: session_email nu a fost trimis, session_token nu a fost trimis, ',	'2024-01-12'),
+(70,	NULL,	NULL,	'::1',	'/request_email',	'Date trimise formularului: email: theodor.negrescu@gmail.com, ',	'2024-01-12'),
+(71,	NULL,	NULL,	'::1',	'/login',	'Date trimise formularului: email: theodor.negrescu@gmail.com, password a fost trimis, ',	'2024-01-12'),
+(72,	NULL,	NULL,	'::1',	'/request_email',	'Date trimise formularului: email: theodor.negrescu@gmail.com, ',	'2024-01-12'),
+(73,	NULL,	NULL,	'::1',	'/login',	'Date trimise formularului: email: theodor.negrescu@gmail.com, password a fost trimis, ',	'2024-01-12'),
+(74,	'theodor.negrescu@gmail.com',	5,	'::1',	'/logout',	'Date trimise formularului: ',	'2024-01-12'),
+(75,	NULL,	NULL,	'::1',	'/request_email',	'Date trimise formularului: email: theodor.negrescu@gmail.com, ',	'2024-01-12'),
+(76,	NULL,	NULL,	'::1',	'/login',	'Date trimise formularului: email: theodor.negrescu@gmail.com, password a fost trimis, ',	'2024-01-12'),
+(77,	'theodor.negrescu@gmail.com',	6,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: test record, ',	'2024-01-12'),
+(78,	'theodor.negrescu@gmail.com',	6,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Georgescu Ion, doctor_name: Popescu Ion, zile: 9999999, ',	'2024-01-12'),
+(79,	'theodor.negrescu@gmail.com',	6,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Alexandra Maria, doctor_name: Lazar Mihai, zile: 9999999, ',	'2024-01-12'),
+(80,	'theodor.negrescu@gmail.com',	6,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Alexandra Maria, doctor_name: Lazar Mihai, zile: 9999999, ',	'2024-01-12'),
+(81,	'theodor.negrescu@gmail.com',	6,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Alexandra Maria, doctor_name: Ionescu Mihai, zile: 9999999, ',	'2024-01-12'),
+(82,	'theodor.negrescu@gmail.com',	6,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Alexandra Maria, doctor_name: Popescu Ion, zile: 9999999, ',	'2024-01-12'),
+(83,	'theodor.negrescu@gmail.com',	6,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Popescu Ion, zile: 9999999, ',	'2024-01-12'),
+(84,	'theodor.negrescu@gmail.com',	6,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Daria Andreea, zile: 9999999, ',	'2024-01-12'),
+(85,	'theodor.negrescu@gmail.com',	6,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Georgescu Ion, doctor_name: Daria Andreea, zile: 9999999, ',	'2024-01-12'),
+(86,	'theodor.negrescu@gmail.com',	6,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Popescu Ion, zile: 321, ',	'2024-01-12'),
+(87,	'theodor.negrescu@gmail.com',	6,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Lazar Mihai, doctor_name: Popescu Ion, zile: 321, ',	'2024-01-12'),
+(88,	'theodor.negrescu@gmail.com',	6,	'::1',	'/log_treatment',	'Date trimise formularului: patient_name: Georgescu Ion, doctor_name: Popescu Ion, zile: 321, ',	'2024-01-12'),
+(89,	'theodor.negrescu@gmail.com',	6,	'::1',	'/fire_employee',	'Date trimise formularului: employee_name: test record, ',	'2024-01-12'),
+(90,	'theodor.negrescu@gmail.com',	6,	'::1',	'/set_specialty_manager',	'Date trimise formularului: specialty_name: dasdasd, manager_name: asd, ',	'2024-01-12');
+
+DROP TABLE IF EXISTS `pacienti`;
+CREATE TABLE `pacienti` (
+  `id_pacient` int NOT NULL AUTO_INCREMENT,
+  `nume` varchar(255) NOT NULL,
+  `prenume` varchar(255) NOT NULL,
+  `data_nastere` date NOT NULL,
+  PRIMARY KEY (`id_pacient`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `pacienti` (`id_pacient`, `nume`, `prenume`, `data_nastere`) VALUES
+(1,	'Georgescu',	'Ion',	'1990-01-01'),
+(2,	'Lazar',	'Mihai',	'1990-01-01');
+
+DROP TABLE IF EXISTS `personal`;
+CREATE TABLE `personal` (
+  `id_salariat` int NOT NULL AUTO_INCREMENT,
+  `nume` varchar(255) NOT NULL,
+  `prenume` varchar(255) NOT NULL,
+  `adresa` varchar(255) NOT NULL,
+  `data_nastere` date NOT NULL,
+  `salariu` int NOT NULL,
+  `id_specializare` int NOT NULL,
+  PRIMARY KEY (`id_salariat`),
+  KEY `foreign_key_specializare` (`id_specializare`),
+  CONSTRAINT `foreign_key_specializare` FOREIGN KEY (`id_specializare`) REFERENCES `specializare` (`id_specializare`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `personal` (`id_salariat`, `nume`, `prenume`, `adresa`, `data_nastere`, `salariu`, `id_specializare`) VALUES
+(1,	'Popescu',	'Ion',	'Str. Mihai Eminescu, nr. 1',	'1990-01-01',	10000,	1),
+(2,	'Ionescu',	'Mihai',	'Str. Mihai Eminescu, nr. 2',	'1990-01-01',	10000,	1),
+(3,	'Alexandra',	'Maria',	'Str. Mihai Eminescu, nr. 3',	'1990-01-01',	10000,	2);
+
+DROP TABLE IF EXISTS `sesiuni`;
+CREATE TABLE `sesiuni` (
+  `id_sesiune` int NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) NOT NULL,
+  `bcrypt_password` varchar(255) NOT NULL,
+  `session_token` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_sesiune`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `sesiuni` (`id_sesiune`, `email`, `bcrypt_password`, `session_token`) VALUES
+(6,	'theodor.negrescu@gmail.com',	'$2y$12$GDPuGJGwOwE2uaoQbxOyUej3i1LST7BWya.DUvNnH8Eqr9u2DcyxW',	'GuzGCqcQcakiE5QBDuCkFkaXStisvnb5lCHhhNw5ggY=');
+
+DROP TABLE IF EXISTS `specializare`;
+CREATE TABLE `specializare` (
+  `id_specializare` int NOT NULL AUTO_INCREMENT,
+  `nume_specializare` varchar(255) NOT NULL,
+  `id_manager` int NOT NULL,
+  PRIMARY KEY (`id_specializare`),
+  KEY `foreign_key_manager` (`id_manager`),
+  CONSTRAINT `foreign_key_manager` FOREIGN KEY (`id_manager`) REFERENCES `personal` (`id_salariat`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `specializare` (`id_specializare`, `nume_specializare`, `id_manager`) VALUES
+(1,	'Cardiologie',	1),
+(2,	'Neurologie',	1);
+
+DROP TABLE IF EXISTS `trateaza`;
+CREATE TABLE `trateaza` (
+  `id_salariat` int NOT NULL,
+  `id_pacient` int NOT NULL,
+  `data_start` date NOT NULL,
+  `data_end` date NOT NULL,
+  PRIMARY KEY (`id_salariat`,`id_pacient`),
+  KEY `foreign_key_pacient` (`id_pacient`),
+  CONSTRAINT `foreign_key_pacient` FOREIGN KEY (`id_pacient`) REFERENCES `pacienti` (`id_pacient`),
+  CONSTRAINT `foreign_key_salariat` FOREIGN KEY (`id_salariat`) REFERENCES `personal` (`id_salariat`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `trateaza` (`id_salariat`, `id_pacient`, `data_start`, `data_end`) VALUES
+(1,	1,	'2024-01-12',	'2024-11-28'),
+(1,	2,	'2024-01-12',	'2024-01-23'),
+(2,	2,	'2024-01-12',	'2024-02-02');
+
+-- 2024-01-12 15:23:35

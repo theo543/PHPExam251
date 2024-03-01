@@ -1,0 +1,18 @@
+<p>
+    Cere un email de autentificare.
+</p>
+
+<form action="/request_email" method="post">
+<p><label>Email: <input type="text" name="email" /></label></p>
+<p><input type="submit" value="Cere" /></p>
+</form>
+
+<p>
+    Dupa ce ai primit emailul, foloseste parola din el pentru a te autentifica.
+</p>
+
+<form action="/login" method="post">
+<p><label>Email: <input type="text" name="email" /></label></p>
+<p><label>Parola: <input type="password" name="password" /></label></p>
+<p><input type="submit" value="Autentifica-te" /></p>
+</form>
